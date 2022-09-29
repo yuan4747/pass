@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/x-con" rel="icon" href="icon.jpg">
+    <title>租车网</title>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/vue/2.7.0/vue.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+    <style>
+        .flex {
+            display: flex;
+        }
+
+        body {
+            height: 100vh;
+            margin: 0;
+            background-color: #f8f8f8;
+        }
+
+        /* * {
+            border: 1px solid black;
+        } */
+
+        .column {
+            flex-direction: column;
+        }
+
+        .flex1 {
+            flex: 1;
+        }
+
+        .white {
+            background-color: #ffffff;
+        }
+
+        .top {
+            margin: auto;
+            font-size: 20px;
+        }
+
+        .mg {
+            margin: 2px auto;
+        }
+
+        .row {
+            flex-direction: row;
+        }
+
+        .el-dropdown-link {
+            cursor: pointer;
+            color: #409EFF;
+        }
+
+        .el-icon-arrow-down {
+            font-size: 12px;
+        }
+
+        .tc {
+            text-align: center;
+            font-size: 40px;
+
+        }
+
+        .tx {
+
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body class="flex column">
+    <!-- 头部栏 -->
+    <div style="height: 60px;overflow: auto;z-index: 10;" class="flex">
+        <div class="top flex" style="margin-left: 260px;">
+            <div><img src="icon.jpg" alt="logo" width="40px" style="padding: 0;margin-top: 7px;"></div>
+            <div style="text-align: center;margin:auto;"><a href="index.html" style="text-decoration: none;">租车网</a>
+            </div>
+        </div>
+        <!-- 租赁 -->
+        <div class="top"><i class="el-icon-goods"></i> <a href="index.html" style="text-decoration: none;">租赁</a> </div>
+        <!-- 历史 -->
+        <div class="top"><i class="el-icon-shopping-cart-full"></i> <a href="shopping.html"
+                style="text-decoration: none;">购物车</a>
+        </div>
+
+        <!-- 社区 -->
+        <div class="top"><i class="el-icon-chat-dot-round"></i> <a href="comni.html"
+                style="text-decoration: none;">社区</a> </div>
+
+        <!-- 我的 -->
+        <div class="top"><i class="el-icon-user-solid">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        我的<span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">历史订单</a></li>
+                        <li><a href="#">注销</a></li>
+                        <li><a href="#">其他</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">管理系统</a></li>
+                    </ul>
+                </div>
+            </i>
+
+        </div>
+        <!-- 登录 -->
+        <div class="top" style="font-size: 10px;margin-right: 10px;"><a href="登录页面.html"
+                style="color: black;text-decoration: none;"><i class="el-icon-s-custom"></i> 登录</a>
+        </div>
+        <!-- 注册 -->
+        <div class="top" style="margin-right: 260px;font-size:10px;margin-left: 10px;text-decoration: none;"><a
+                href="注册页面.html" style="color: black;"> <i class="el-icon-circle-plus-outline"></i> 注册</a>
+        </div>
+    </div>
+    <!-- 内容区 -->
+    <div class="flex white column mg" style="overflow: auto;">
+
+        <div style="height: 260px;width:100vh; border: 1px solid black;" class="mg flex">
+            <div style="height: 240px;border: 1px solid bisque;" class="flex1"><img src="imgs/wulin.jpg" alt="五菱宏光就是光！"
+                    height="210px"></div>
+            <div style="height: 240px;border: 1px solid bisque;" class="flex1 flex column">
+                <div class="flex1 tc">价格：50-300/天</div>
+                <div class="flex1 column flex">
+                    <div class="flex1 tx">2022 款 马卡龙时尚款 磷酸铁锂</div>
+                    <div class="flex1">
+                        <div style="margin-left: 370px;margin-top: 20px;font-size: 27px;"><i class="el-icon-goods "
+                                style="margin-right: 5px;">下单</i></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div style="height: 260px;width:100vh; border: 1px solid black;" class="mg flex">
+            <div style="height: 240px;border: 1px solid bisque;" class="flex1"><img src="imgs/aodi.jpg" alt="奥迪"
+                    height="210px"></div>
+            <div style="height: 240px;border: 1px solid bisque;" class="flex1 flex column">
+                <div class="flex1 tc">价格：1k-7k/天</div>
+                <div class="flex1 column flex">
+                    <div class="flex1 tx">2022 款 45 TFSI quattro</div>
+                    <div class="flex1">
+                        <div style="margin-left: 370px;margin-top: 20px;font-size: 27px;"><i class="el-icon-goods "
+                                style="margin-right: 5px;">下单</i></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div style="height: 260px;width:100vh; border: 1px solid black;" class="mg flex">
+            <div style="height: 240px;border: 1px solid bisque;" class="flex1"><img src="imgs/baoshijie.jpg" alt="保时捷"
+                    height="210px"></div>
+            <div style="height: 240px;border: 1px solid bisque;" class="flex1 flex column">
+                <div class="flex1 tc">价格：3k-3w/天</div>
+                <div class="flex1 column flex">
+                    <div class="flex1 tx">2023 款 改款 Panamera </div>
+                    <div class="flex1">
+                        <div style="margin-left: 370px;margin-top: 20px;font-size: 27px;"><i class="el-icon-goods "
+                                style="margin-right: 5px;">下单</i></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div style="height: 260px;width:100vh; border: 1px solid black;" class="mg flex">
+            <div style="height: 240px;border: 1px solid bisque;" class="flex1"><img src="imgs/falali.jpg" alt="法拉利"
+                    height="210px"></div>
+            <div style="height: 240px;border: 1px solid bisque;" class="flex1 flex column">
+                <div class="flex1 tc">价格：7k-7w/天</div>
+                <div class="flex1 column flex">
+                    <div class="flex1 tx">2021 款 3.9T V8 Spider</div>
+                    <div class="flex1">
+                        <div style="margin-left: 370px;margin-top: 20px;font-size: 27px;"><i class="el-icon-goods "
+                                style="margin-right: 5px;">下单</i></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div>
+            <p style="font-size: 45px;border: 1px solid black;">暂无更多车辆可提供租赁，请等待后续上新!</p>
+        </div>
+
+    </div>
+
+
+</body>
+
+
+</html>

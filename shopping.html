@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/x-con" rel="icon" href="icon.jpg">
+    <title>租车网</title>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/vue/2.7.0/vue.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+    <style>
+        .flex {
+            display: flex;
+        }
+
+        body {
+            height: 100vh;
+            margin: 0;
+            background-color: #f8f8f8;
+        }
+
+        /* * {
+            border: 1px solid black;
+        } */
+
+        .column {
+            flex-direction: column;
+        }
+
+        .flex1 {
+            flex: 1;
+        }
+
+        .white {
+            background-color: #ffffff;
+        }
+
+        .top {
+            margin: auto;
+            font-size: 20px;
+        }
+
+        .mg {
+            margin: 2px auto;
+        }
+
+        .row {
+            flex-direction: row;
+        }
+
+        .el-dropdown-link {
+            cursor: pointer;
+            color: #409EFF;
+        }
+
+        .el-icon-arrow-down {
+            font-size: 12px;
+        }
+
+        .tc {
+            text-align: center;
+            font-size: 40px;
+
+        }
+
+        .tx {
+
+            font-size: 30px;
+        }
+
+        .tx1 {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .tx2 {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .border {
+            border: 1px solid black;
+        }
+
+        .flex2 {
+            flex: 2;
+        }
+
+        background-img {
+            background-size: auto;
+        }
+    </style>
+</head>
+
+<body class="flex column">
+    <!-- 头部栏 -->
+    <div style="height: 60px;overflow: auto;z-index: 10;" class="flex">
+        <div class="top flex" style="margin-left: 260px;">
+            <div><img src="icon.jpg" alt="logo" width="40px" style="padding: 0;margin-top: 7px;"></div>
+            <div style="text-align: center;margin:auto;"><a href="index.html" style="text-decoration: none;">租车网</a>
+            </div>
+        </div>
+        <!-- 租赁 -->
+        <div class="top"><i class="el-icon-goods"></i> <a href="index.html" style="text-decoration: none;">租赁</a> </div>
+        <!-- 历史 -->
+        <div class="top"><i class="el-icon-shopping-cart-full"></i> <a href="shopping.html"
+                style="text-decoration: none;">购物车</a>
+        </div>
+
+        <!-- 社区 -->
+        <div class="top"><i class="el-icon-chat-dot-round"></i> <a href="comni.html"
+                style="text-decoration: none;">社区</a> </div>
+
+        <!-- 我的 -->
+        <div class="top"><i class="el-icon-user-solid">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        我的<span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">历史订单</a></li>
+                        <li><a href="#">注销</a></li>
+                        <li><a href="#">其他</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">管理系统</a></li>
+                    </ul>
+                </div>
+            </i>
+
+        </div>
+        <!-- 登录 -->
+        <div class="top" style="font-size: 10px;margin-right: 10px;"><a href="登录页面.html"
+                style="color: black;text-decoration: none;"><i class="el-icon-s-custom"></i> 登录</a>
+        </div>
+        <!-- 注册 -->
+        <div class="top" style="margin-right: 260px;font-size:10px;margin-left: 10px;text-decoration: none;"><a
+                href="注册页面.html" style="color: black;"> <i class="el-icon-circle-plus-outline"></i> 注册</a>
+        </div>
+    </div>
+    <!-- 内容区 -->
+    <div class="flex white column mg" style="overflow: auto;">
+
+        <div style="height: 130px;width:50vh; border: 1px solid black;" class="mg flex">
+            <div class="flex1 border">
+                <tr>
+                    <th><input type="checkbox" name="" class="getgoods" style="margin:10px;"></th>
+                    <br>
+                    <th class="price">￥ 2000/天</th>
+                    <br>
+                    <td>
+                        <button class="jian"><i class="el-icon-remove-outline"></i></button>
+                        <span id="31">1</span>
+                        <button class="add"><i class="el-icon-circle-plus"></i></button>
+                    </td>
+                    <br>
+                    <td class="total">￥ ： 2000</td>
+                </tr>
+            </div>
+            <div class="flex1 border" style="background-image: url(imgs/bc.jpg);"><img src="imgs/baoshijie.jpg"
+                    alt="保时捷" style="height: 70px; margin-top: 30px;">
+            </div>
+            <div class="flex2 border flex column">
+                <div class="flex1 border tx1">2023 款 改款 Panamera</div>
+                <div class="flex1 border">
+                    <p class="tx2">￥ <span id="1">2k</span> /天</p>
+                </div>
+            </div>
+
+        </div>
+        <div style="height: 130px;width:50vh; border: 1px solid black;" class="mg flex">
+            <div class="flex1 border">
+                <tr>
+                    <th><input type="checkbox" name="" class="getgoods" style="margin:10px;"></th>
+                    <br>
+                    <th class="price">￥ 7000/天</th>
+                    <br>
+                    <td>
+                        <button class="jian"><i class="el-icon-remove-outline"></i></button>
+                        <span id="31">1</span>
+                        <button class="add"><i class="el-icon-circle-plus"></i></button>
+                    </td>
+                    <br>
+                    <td class="total">￥ ：7000 </td>
+                </tr>
+            </div>
+            <div class="flex1 border" style="background-image: url(imgs/bc.jpg);"><img src="imgs/falali.jpg" alt="法拉利"
+                    style="height: 70px; margin-top: 30px;">
+            </div>
+            <div class="flex2 border flex column">
+                <div class="flex1 border tx1">2021 款 3.9T V8 Spider</div>
+                <div class="flex1 border">
+                    <p class="tx2">￥ <span id="2">7k</span> /天</p>
+                </div>
+            </div>
+        </div>
+        <div style="height: 130px;width:50vh; border: 1px solid black;" class="mg flex">
+            <div class="flex1 border">
+                <tr>
+                    <th><input type="checkbox" name="" class="getgoods" style="margin:10px;"></th>
+                    <br>
+                    <th class="price">￥ 200/天</th>
+                    <br>
+                    <td>
+                        <button class="jian"><i class="el-icon-remove-outline"></i></button>
+                        <span id="31">1</span>
+                        <button class="add"><i class="el-icon-circle-plus"></i></button>
+                    </td>
+                    <br>
+                    <td class="total">￥ ： 200</td>
+                </tr>
+            </div>
+            <div class="flex1 border" style="background-image: url(imgs/bc.jpg);"><img src="imgs/wulin.jpg" alt="五菱宏光"
+                    style="height: 70px; margin-top: 30px;">
+            </div>
+            <div class="flex2 border flex column">
+                <div class="flex1 border tx1">2022 款 马卡龙时尚款 磷酸铁锂
+                </div>
+                <div class="flex1 border">
+                    <p class="tx2">￥ <span id="3">200</span> /天</p>
+                </div>
+            </div>
+        </div>
+        <div style="height: 90px;width:50vh; " class="mg flex">
+            <div class="flex1">
+                <th>
+                    <button class="all" style="font-size: 30px;">全选</button>
+
+                </th>
+            </div>
+            <div class="flex1">
+                <span style="font-size: 30px;margin: 50px 30px ;">总价: 9200<span class="getsum"></span></span>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <script>
+        $(".add").click(function () {
+            let num = parseInt($(this).prev().text());
+            num++;
+            $(this).prev().text(num)
+            // console.log(num);
+            // console.log(typeof num);
+
+
+        })
+        $(".jian").click(function () {
+            let num = parseInt($(this).next().text());
+
+            num--;
+            if (num < 1) {
+                num = 1;
+            }
+            $(this).next().text(num)
+            // console.log(num);
+            // console.log(typeof num);
+        })
+        $(".all").click(function () {
+            $('.getgoods').prop('checked', true)
+            getsum();
+            // if (checked = true) {
+            //     checked = false
+            // }
+        })
+        function getsum() {
+            let sum = 0;
+            for (let i = 0; i < ('.total').length; i++) {
+                if ($('.total').eq(i).parent().find('input').prop('checked')) {
+                    sum += parsetInt($('.total').eq(i).text())
+                }
+            }
+            $('.sum').text(sum);
+        }
+        $('.getgoods').click(function () {
+            getsum();
+        })
+
+    </script>
+
+</body>
+
+
+</html>

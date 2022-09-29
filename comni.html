@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/x-con" rel="icon" href="icon.jpg">
+    <title>租车网</title>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/vue/2.7.0/vue.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+    <style>
+        .flex {
+            display: flex;
+        }
+
+        body {
+            height: 100vh;
+            margin: 0;
+            background-color: #f8f8f8;
+        }
+
+        /* * {
+            border: 1px solid black;
+        } */
+
+        .column {
+            flex-direction: column;
+        }
+
+        .flex1 {
+            flex: 1;
+        }
+
+        .white {
+            background-color: #ffffff;
+        }
+
+        .top {
+            margin: auto;
+            font-size: 20px;
+        }
+
+        .mg {
+            margin: 2px auto;
+        }
+
+        .row {
+            flex-direction: row;
+        }
+
+        .el-dropdown-link {
+            cursor: pointer;
+            color: #409EFF;
+        }
+
+        .el-icon-arrow-down {
+            font-size: 12px;
+        }
+
+        .tc {
+            text-align: center;
+            font-size: 40px;
+
+        }
+
+        .tx {
+
+            font-size: 30px;
+        }
+
+        .border {
+            border: 1px solid black;
+        }
+
+        .flex2 {
+            flex: 2;
+        }
+    </style>
+</head>
+
+<body class="flex column">
+    <!-- 头部栏 -->
+    <div style="height: 60px;overflow: auto;z-index: 10;" class="flex">
+        <div class="top flex" style="margin-left: 260px;">
+            <div><img src="icon.jpg" alt="logo" width="40px" style="padding: 0;margin-top: 7px;"></div>
+            <div style="text-align: center;margin:auto;"><a href="index.html" style="text-decoration: none;">租车网</a>
+            </div>
+        </div>
+        <!-- 租赁 -->
+        <div class="top"><i class="el-icon-goods"></i> <a href="index.html" style="text-decoration: none;">租赁</a> </div>
+        <!-- 历史 -->
+        <div class="top"><i class="el-icon-shopping-cart-full"></i> <a href="shopping.html"
+                style="text-decoration: none;">购物车</a>
+        </div>
+
+        <!-- 社区 -->
+        <div class="top"><i class="el-icon-chat-dot-round"></i> <a href="comni.html"
+                style="text-decoration: none;">社区</a> </div>
+
+        <!-- 我的 -->
+        <div class="top"><i class="el-icon-user-solid">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        我的<span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">历史订单</a></li>
+                        <li><a href="#">注销</a></li>
+                        <li><a href="#">其他</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">管理系统</a></li>
+                    </ul>
+                </div>
+            </i>
+
+        </div>
+        <!-- 登录 -->
+        <div class="top" style="font-size: 10px;margin-right: 10px;"><a href="登录页面.html"
+                style="color: black;text-decoration: none;"><i class="el-icon-s-custom"></i> 登录</a>
+        </div>
+        <!-- 注册 -->
+        <div class="top" style="margin-right: 260px;font-size:10px;margin-left: 10px;text-decoration: none;"><a
+                href="注册页面.html" style="color: black;"> <i class="el-icon-circle-plus-outline"></i> 注册</a>
+        </div>
+    </div>
+    <!-- 内容区 -->
+    <div class="flex white column mg" style="overflow: auto;">
+
+        <div style="height: 260px;width:70vh; border: 1px solid black;" class="mg flex">
+
+            <!-- 
+            <div class="flex1 border column flex">
+                <div class="flex1 border">1</div>
+                <div class="flex1 border">1</div>
+            </div> -->
+            <div class="flex1 border"><img src="imgs/r1.png" alt="" style="height: 200px;" class="tc"></div>
+            <div class="flex1 border">
+                <p style="font-size: 1.5rem;">
+                    高配版五菱宏光MINIEV，它拥有着170公里的综合续航能力，我每天上下班大概要跑20多公里吧，五菱宏光MINIEV能够保证我一星期的持续使用，如果想要回趟家看看父母，单程60公里可以放心跑的，而且即便是在寒冷的冬天，也不需要担心续航缩水太大的问题，毕竟五菱宏光MINIEV搭载了低温预加热技术和电池保温功能，大大减少冬季电池的续航缩水。
+
+                </p>
+            </div>
+
+
+        </div>
+        <div style="height: 260px;width:70vh; border: 1px solid black;" class="mg flex">
+
+            <!-- <div class="flex1 border column flex">
+                <div class="flex1 border">1</div>
+                <div class="flex1 border">1</div> -->
+            <!-- </div> -->
+            <div class="flex1 border"><img src="imgs/aodi.jpg" alt="" style="height: 200px;"></div>
+            <div class="flex1 border flex">
+                <p style="font-size: 1.5rem;">
+
+                    488 Pista翻译成中文，意思是赛道版488，所以你应该知道它最应该出现在哪里。是的，这辆车和488 GTB完全不同。其最直接的竞争对手是保时捷911 GT2 RS、兰博基尼Huracan
+                    Performante等。法拉利官方试驾也问了我的驾驶经验。当我直言不讳地表示911 GT2 RS感觉更极端，更接近赛车时，我能感觉到他的杀气...当然，这只是我们之间的一个玩笑，
+                </p>
+            </div>
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+</body>
+
+
+</html>
